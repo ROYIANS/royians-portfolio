@@ -1,0 +1,7 @@
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend development guidelines overview and quick reference"}
+{"file": ".trellis/spec/frontend/directory-structure.md", "reason": "Module organization and file layout conventions"}
+{"file": ".trellis/spec/frontend/component-guidelines.md", "reason": "Component patterns, props, and styling conventions"}
+{"file": ".trellis/spec/frontend/hook-guidelines.md", "reason": "Custom hooks and data fetching patterns"}
+{"file": ".trellis/spec/frontend/state-management.md", "reason": "State management approach and patterns"}
+{"file": ".trellis/spec/frontend/type-safety.md", "reason": "TypeScript conventions and type patterns"}
+{"file": ".trellis/spec/frontend/quality-guidelines.md", "reason": "Code quality standards and forbidden patterns"}
