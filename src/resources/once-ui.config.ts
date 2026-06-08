@@ -14,13 +14,13 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://royians.github.io";
 
 const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
+  "/blog": false,
   "/gallery": true,
 };
 
@@ -187,25 +187,24 @@ const mailchimp: MailchimpConfig = {
 // default schema data
 const schema: SchemaConfig = {
   logo: "",
-  type: "Organization",
-  name: "Once UI",
+  type: "Person",
+  name: "ROYIANS",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "royians@vidorra.life",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  github: "https://github.com/ROYIANS",
+  bilibili: "https://space.bilibili.com/32267413/",
 };
 
 // social sharing configuration for blog posts
 const socialSharing: SocialSharingConfig = {
   display: true,
   platforms: {
-    x: true,
-    linkedin: true,
+    x: false,
+    linkedin: false,
     facebook: false,
     pinterest: false,
     whatsapp: false,

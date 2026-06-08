@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "ROYIANS",
+  lastName: "",
+  name: `ROYIANS`,
+  role: "Frontend Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "royians@vidorra.life",
+  location: "Asia/Shanghai", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["中文", "Español", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,25 +25,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/ROYIANS",
     essential: true,
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Bilibili",
+    icon: "bilibili",
+    link: "https://space.bilibili.com/32267413/",
     essential: true,
   },
   {
@@ -60,23 +48,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>用代码编织视觉诗意</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Print Template Designer</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/print-template-designer",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    我是 <Text as="span" size="xl" weight="strong">ROYIANS</Text>，一名前端工程师，<br />在像素与代码之间寻找设计的诗意。
 </>
   ),
 };
@@ -102,80 +90,79 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        在代码与设计的交汇处，我寻找着诗意的表达。<br />
+        君子不器，正道直行——这是我信奉的哲学，也是我对待技术与设计的态度。<br /><br />
+        我相信，优秀的前端开发不仅仅是技术的堆砌，更是艺术的呈现。<br />
+        每一行代码都是一笔，每一个组件都是一幅画。<br />
+        我致力于在像素与逻辑之间，编织出优雅而富有诗意的用户体验。
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Work Experience",
-    experiences: [
-      {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
-        achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
-    ],
+    experiences: [],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
-    ],
+    institutions: [],
   },
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "React & Next.js",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>使用 React 生态系统构建现代化的用户界面，通过 Next.js 实现服务端渲染和静态生成，打造极致的性能体验。</>
+        ),
+        tags: [
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
+            name: "Next.js",
+            icon: "nextjs",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "TypeScript",
+        description: (
+          <>用类型系统守护代码的健壮性，在编译时发现潜在问题，让代码如诗般优雅而可靠。</>
+        ),
+        tags: [
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "CSS & Styling",
+        description: (
+          <>精通 CSS Modules、SCSS、Tailwind CSS 等多种样式方案，用样式编织视觉的诗意。</>
+        ),
+        tags: [
+          {
+            name: "CSS",
+            icon: "css",
+          },
+          {
+            name: "SCSS",
+            icon: "sass",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "UI/UX Design",
+        description: (
+          <>关注用户体验的每一个细节，用设计思维驱动开发，让技术服务于人。</>
         ),
         tags: [
           {
@@ -183,50 +170,37 @@ const about: About = {
             icon: "figma",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "State Management",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>熟练运用 Redux、Zustand、Context API 等状态管理方案，让数据流动如诗般流畅。</>
         ),
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Redux",
+            icon: "redux",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Build Tools",
+        description: (
+          <>掌握 Webpack、Vite、Turbopack 等构建工具，优化开发体验和生产性能。</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Webpack",
+            icon: "webpack",
+          },
+          {
+            name: "Vite",
+            icon: "vite",
           },
         ],
+        images: [],
       },
     ],
   },
