@@ -209,10 +209,9 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "技术博客",
+  description: `来自 ${person.name} 的技术文章和思考`,
+  // WordPress blog integration - posts fetched from WordPress API
 };
 
 const work: Work = {
